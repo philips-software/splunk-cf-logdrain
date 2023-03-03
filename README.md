@@ -1,6 +1,8 @@
 # splunk-cf-logdrain
 
-Logdrainer to forward Cloud foundry logs to Splunk
+![splunk-cf-logdrain excalidraw](https://user-images.githubusercontent.com/14123216/222737649-0f42e6f3-f7bc-4eb3-935e-1c98c59824c7.svg)
+
+User deployable service which implements a pipeline consisting of a small Go app and a fluent-bit sidecar process. It presents a CF compatible logdrainer endpoint which accepts RFC5424 messages, forwards them to the fluent-bit sidecard process, which in turn forwards the log messages to splunk, done.
 
 ## Usage
 

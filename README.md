@@ -29,7 +29,7 @@ User deployable service which implements a pipeline consisting of a small Go app
 
 ## Configuring
 
-Once the app is deployed you it will expose a Cloud foundry compatible logdrain endpoint:
+Once the app is deployed it will expose a Cloud foundry compatible logdrain endpoint:
 
 ```
 https://cf-splunk-logdrain-app.domain/syslog/drain/{{TOKEN}}

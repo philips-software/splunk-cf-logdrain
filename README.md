@@ -35,7 +35,7 @@ Once the app is deployed it will expose a Cloud foundry compatible logdrain endp
 https://cf-splunk-logdrain-app.domain/syslog/drain/{{TOKEN}}
 ```
 
-You can the create a user defined logging service:
+You can then create a user defined logging service:
 
 ```shell
 cf cups splunk-logdrain -l https://cf-splunk-logdrain-app.domain/syslog/drain/{{TOKEN}}

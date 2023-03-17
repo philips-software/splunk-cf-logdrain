@@ -27,7 +27,33 @@ User deployable service which implements a pipeline consisting of a small Go app
  | SPLUNK_TOKEN    | The Splunk HEC token               |                                       |
  | TOKEN           | The logdrain TOKEN value           |                                       |
 
-## Configuring
+## Example deployment manifest
+
+```yaml
+---
+applications:
+- name: splunk-cf-logdrain
+  env:
+    TOKEN: <<RANDOM TOKEN HERE>>
+    SPLUNK_TOKEN: <<SPLUNK HEC TOKEN HERE>>
+    SPLUNK_HOST: splunk-ingest-host-here.com
+    FLUENT_BIT_PORT: '8080'
+    LISTEN_PORT: '2020'
+  docker:
+    image: ghcr.io/philips-software/splunk-cf-logdrain:v0.1.0
+  routes:
+  - route: splunk-cf-logdrain.cloud.pcftest.com
+    protocol: http1
+  processes:
+  - type: web
+    instances: 1
+    memory: 1024M
+    disk_quota: 1024M
+    log-rate-limit-per-second: -1
+    health-check-type: port
+```
+
+## Post deployment setup
 
 Once the app is deployed it will expose a Cloud foundry compatible logdrain endpoint:
 

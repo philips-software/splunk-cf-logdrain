@@ -27,6 +27,29 @@ User deployable service which implements a pipeline consisting of a small Go app
  | SPLUNK_TOKEN    | The Splunk HEC token               |                                       |
  | TOKEN           | The logdrain TOKEN value           |                                       |
 
+## Configuring
+
+Once the app is deployed you it will expose a Cloud foundry compatible logdrain endpoint:
+
+```
+https://cf-splunk-logdrain-app.domain/syslog/drain/{{TOKEN}}
+```
+
+You can the create a user defined logging service:
+
+```shell
+cf cups splunk-logdrain -l https://cf-splunk-logdrain-app.domain/syslog/drain/{{TOKEN}}
+```
+
+Bind it to an app and restart to activate logging:
+
+```shell
+cf bind-service my-app splunk-logdrain
+cf restart my-app
+```
+
+You should now see Cloud foundry logs appearing in your Splunk cluster
+
 ## License
 
 License is MIT

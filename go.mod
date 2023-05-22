@@ -6,7 +6,7 @@ require (
 	github.com/RackSec/srslog v0.0.0-20180709174129-a4725f04ec91
 	github.com/influxdata/go-syslog/v2 v2.0.1
 	github.com/labstack/echo/v4 v4.10.2
-	github.com/philips-software/go-hsdp-api v0.80.1
+	github.com/philips-software/go-hsdp-api v0.81.0
 	github.com/philips-software/logproxy v1.8.3
 	github.com/spf13/viper v1.15.0
 	github.com/stretchr/testify v1.8.3
@@ -60,7 +60,7 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/crypto v0.8.0 // indirect
-	golang.org/x/net v0.9.0 // indirect
+	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
 	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/text v0.9.0 // indirect

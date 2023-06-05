@@ -2,7 +2,7 @@
 
 ![splunk-cf-logdrain excalidraw](resources/splunk-cf-logdrain.excalidraw.svg)
 
-User deployable service which implements a pipeline consisting of a small Go app and a fluent-bit sidecar process. It presents a CF compatible logdrainer endpoint which accepts RFC5424 messages, forwards them to the fluent-bit sidecard process, which in turn forwards the log messages to splunk, done.
+User deployable service which implements a pipeline consisting of a small Go app and a fluent-bit sidecar process. It presents a CF compatible logdrainer endpoint which accepts RFC5424 messages, forwards them to the fluent-bit side-car process, which in turn forwards the log messages to splunk, done.
 
 ## Usage
 

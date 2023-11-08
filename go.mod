@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/RackSec/srslog v0.0.0-20180709174129-a4725f04ec91
 	github.com/influxdata/go-syslog/v2 v2.0.1
-	github.com/labstack/echo/v4 v4.11.2
+	github.com/labstack/echo/v4 v4.11.3
 	github.com/philips-software/go-hsdp-api v0.83.2
 	github.com/philips-software/logproxy v1.8.3
 	github.com/spf13/viper v1.17.0

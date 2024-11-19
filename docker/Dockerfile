@@ -9,7 +9,7 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=$GOARCH go build -o /splunk-cf-logdrain
 
 ## Build final image
-FROM fluent/fluent-bit:3.1.9-debug
+FROM fluent/fluent-bit:3.2.1-debug
 LABEL maintainer="andy.lo-a-foe@philips.com"
 RUN apt-get update && apt-get install -y \
     jq \

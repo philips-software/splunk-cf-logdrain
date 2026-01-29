@@ -1,5 +1,3 @@
-# DEPRECATED: please use https://github.com/dip-software/splunk-cf-logdrain
-
 # splunk-cf-logdrain
 
 ![splunk-cf-logdrain excalidraw](resources/splunk-cf-logdrain.excalidraw.svg)

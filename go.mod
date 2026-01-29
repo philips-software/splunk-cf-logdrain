@@ -9,7 +9,7 @@ require (
 	github.com/philips-software/go-hsdp-api v0.88.0
 	github.com/philips-software/logproxy v1.9.0
 	github.com/spf13/viper v1.19.0
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 )
 
 require (

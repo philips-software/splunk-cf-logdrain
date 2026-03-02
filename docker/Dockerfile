@@ -1,4 +1,4 @@
-FROM golang:1.20.2-buster as builder
+FROM golang:latest as builder
 WORKDIR /splunk-cf-logdrain
 COPY go.mod .
 COPY go.sum .
